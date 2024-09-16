@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Tarea1_disp_mob_imagenes</string>
+    <string name="name_hint">Nombre</string>
+    <string name="email_hint">Correo</string>
+    <string name="phone_hint">Celular</string>
+    <string name="send">Enviar</string>
+
+
+</resources>
