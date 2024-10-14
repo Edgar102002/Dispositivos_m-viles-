@@ -1,108 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity= "center"
     android:orientation="vertical"
-    android:padding="16dp"
-    tools:context=".MainActivity"
-    tools:ignore="ExtraText">
-
-    <EditText
-        android:id="@+id/nombre"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:autofillHints=""
-        android:background="@color/green"
-        android:hint="@string/name_hint"
-        android:inputType="textPersonName"
-        android:maxLength="50"
-        android:minHeight="48dp"
-        android:text=""
-        android:textColorHint="#558B2F"
-        android:gravity="center"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-
-        />
-
-    <EditText
-        android:id="@+id/edad"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:autofillHints=""
-        android:background="@color/green"
-        android:gravity="center"
-        android:hint="@string/edad_hint"
-        android:inputType="number"
-        android:maxLength="50"
-        android:minHeight="48dp"
-        android:text=""
-        android:textColorHint="#558B2F"
-        app:layout_constraintTop_toBottomOf="@id/nombre"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        />
-
-
-
-    <Button
-        android:id="@+id/btnAceptar"
+    android:padding="8dp"
+    >
+    <TextView
+        android:id="@+id/titleContactos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:backgroundTint="@color/orange"
-        android:text="@string/send"
-        android:textColor="@color/white"
-        android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@id/edad"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Contactos"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        android:layout_gravity="center_horizontal"
+        android:padding="16dp"/>
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Contactos"
+        android:iconifiedByDefault="false"
+        android:dividerHeight="1dp"
         />
 
-
-
-
-
-    <ImageView
-        android:id="@+id/imageName"
-        android:layout_width="29dp"
-        android:layout_height="29dp"
-        android:layout_margin="29dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="36dp"
-        android:src="@drawable/usuario_app"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="UnknownId" />
-
-    <ImageView
-        android:id="@+id/imagEmail"
-        android:layout_width="29dp"
-        android:layout_height="145dp"
-        android:layout_margin="29dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="36dp"
-        android:src="@drawable/usuario_app"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ListView
+        android:id="@+id/Contactos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"/>
+</LinearLayout>

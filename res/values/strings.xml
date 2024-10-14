@@ -1,8 +1,4 @@
 <resources>
-    <string name="app_name">Tarea1_disp_mob_imagenes</string>
-    <string name="name_hint">Introduce nombre</string>
-    <string name="edad_hint">Introduce edad</string>
-    <string name="send">Enviar</string>
-
-
+    <string name="app_name">contactos_tarea</string>
+    <string name="contacto">Nombre del contacto</string>
 </resources>
