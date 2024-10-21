@@ -1,33 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="8dp"
-    >
-    <TextView
-        android:id="@+id/titleContactos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Contactos"
-        android:textSize="24sp"
-        android:textStyle="italic"
-        android:layout_gravity="center_horizontal"
-        android:padding="16dp"/>
+    tools:context=".MainActivity">
 
-    <SearchView
-        android:id="@+id/searchView"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:queryHint="Contactos"
-        android:iconifiedByDefault="false"
-        android:dividerHeight="1dp"
-        />
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:titleTextColor="@android:color/white"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-    <ListView
-        android:id="@+id/Contactos"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:divider="@android:color/darker_gray"
-        android:dividerHeight="1dp"/>
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
 </LinearLayout>

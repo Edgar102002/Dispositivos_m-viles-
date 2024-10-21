@@ -1,9 +1,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Contactos_tarea" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.ReservadeCitas203" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.Contactos_tarea" parent="Base.Theme.Contactos_tarea" />
+    <style name="Theme.ReservadeCitas203" parent="Base.Theme.ReservadeCitas203" />
 </resources>
