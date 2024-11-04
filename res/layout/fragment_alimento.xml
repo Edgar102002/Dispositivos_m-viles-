@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/cultureInfoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detalle del alimento seleccionado"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/buttonToRegion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver a la seleccion de alimento"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
